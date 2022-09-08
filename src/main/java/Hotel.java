@@ -2,10 +2,14 @@ import com.sun.org.apache.xpath.internal.operations.Gt;
 
 import java.awt.print.Book;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Hotel {
     private ArrayList<Bedroom> bedrooms;
     private ArrayList<ConferenceRoom> conferenceRooms;
+
+    private HashMap<String, DiningRoom> diningRooms;
+
 
     Booking booking;
 
@@ -13,6 +17,7 @@ public class Hotel {
     public Hotel() {
         this.bedrooms = new ArrayList<Bedroom>();
         this.conferenceRooms = new ArrayList<ConferenceRoom>();
+        this.diningRooms = new HashMap<>();
     }
 
     public int getBedrooms() {
